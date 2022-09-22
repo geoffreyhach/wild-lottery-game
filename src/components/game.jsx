@@ -9,10 +9,12 @@ const Game = () => {
     const [win, setWin] = useState(false);
     const placeholder = `Write a number between ${minTry} and ${maxTry}`;
 
+    // randomize a lottery number
     useEffect(() => {
         setLottery(Math.floor(Math.random() * 100));
     }, []);
 
+    // modify length of progress bar based on the min and max tries
     useEffect(() => {
         document.querySelector(".min-value").style.width = `${minTry}%`;
     }, [minTry]);
