@@ -7,6 +7,7 @@ const Game = () => {
     const [minTry, setMinTry] = useState(0);
     const [maxTry, setMaxTry] = useState(100);
     const [win, setWin] = useState(false);
+    const placeholder = `Write a number between ${minTry} and ${maxTry}`;
 
     useEffect(() => {
         setLottery(Math.floor(Math.random() * 100));
@@ -15,6 +16,7 @@ const Game = () => {
     useEffect(() => {
         document.querySelector(".min-value").style.width = `${minTry}%`;
     }, [minTry]);
+
     useEffect(() => {
         document.querySelector(".max-value").style.width = `${100 - maxTry}%`;
     }, [maxTry]);
@@ -49,8 +51,6 @@ const Game = () => {
         if (value < maxTry) setMaxTry(value);
         else return;
     };
-
-    const placeholder = `Write a number between ${minTry} and ${maxTry}`;
 
     return (
         <div className="card">
