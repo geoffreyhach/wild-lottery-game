@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ProgressBar from "./ProgressBar";
 
 const Game = () => {
     const [playersChoice, setPlayersChoice] = useState("");
@@ -13,15 +14,6 @@ const Game = () => {
     useEffect(() => {
         setLottery(Math.floor(Math.random() * 100));
     }, []);
-
-    // modify length of progress bar based on the min and max tries
-    useEffect(() => {
-        document.querySelector(".min-value").style.width = `${minTry}%`;
-    }, [minTry]);
-
-    useEffect(() => {
-        document.querySelector(".max-value").style.width = `${100 - maxTry}%`;
-    }, [maxTry]);
 
     const handleChange = (e) => {
         setPlayersChoice(Number(e.target.value));
@@ -61,11 +53,9 @@ const Game = () => {
             <div className="goal">
                 <h2>{win ? lottery : "??"}</h2>
             </div>
-            <div className="progression-wrapper">
-                <div className="min-value"></div>
-                <div></div>
-                <div className="max-value"></div>
-            </div>
+
+            <ProgressBar minTry={minTry} maxTry={maxTry} />
+
             <div className="input-wrapper">
                 <label></label>
                 <input
