@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/wild-lottery-game/static/css/main.bf9fc650.css",
-    "main.js": "/wild-lottery-game/static/js/main.1ed8fc88.js",
+    "main.js": "/wild-lottery-game/static/js/main.68301a75.js",
     "static/js/787.d5fc0f73.chunk.js": "/wild-lottery-game/static/js/787.d5fc0f73.chunk.js",
     "static/media/logo.svg": "/wild-lottery-game/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/wild-lottery-game/index.html",
     "main.bf9fc650.css.map": "/wild-lottery-game/static/css/main.bf9fc650.css.map",
-    "main.1ed8fc88.js.map": "/wild-lottery-game/static/js/main.1ed8fc88.js.map",
+    "main.68301a75.js.map": "/wild-lottery-game/static/js/main.68301a75.js.map",
     "787.d5fc0f73.chunk.js.map": "/wild-lottery-game/static/js/787.d5fc0f73.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bf9fc650.css",
-    "static/js/main.1ed8fc88.js"
+    "static/js/main.68301a75.js"
   ]
 }
